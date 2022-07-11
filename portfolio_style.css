@@ -37,7 +37,8 @@ main {
 	color: #1fffe1;
 	text-decoration: none;
 	font-size: 2rem;
-	font-family: "SF Mono", monospace;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 100;
 }
 
 .nav_button_text {
@@ -59,22 +60,32 @@ main {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	min-height: 100vh;
+	height: 100vh;
 
 }
 
 .initial_hi{
 	color: #1fffe1;
-	font-family: "SF Mono", monospace;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 2rem;
+	font-weight: 400;
 }
 
 h1 {
 	font-size: 6rem;
+	margin: 10px 0px;
+	color: #b0cfcf;
+}
+
+.intro_subheading {
+	font-size: 5rem;
+	margin: 10px 0px;
+	color: #87a1a1;
 }
 
 .intro_short {
 	font-size: 2rem;
+	color: #6e8585;
 }
 
 .intro_button {
@@ -82,8 +93,15 @@ h1 {
 	text-decoration: none;
 	color: #1fffe1;
 	border: #1fffe1 solid 1px;
-	font-family: "SF Mono", monospace;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 2rem;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.intro_button:hover {
+	background-color: #1fffe1;
+	color: #01274a;
 }
 
 .down_arrow {
