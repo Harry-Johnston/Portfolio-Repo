@@ -6,5 +6,48 @@ html {
 	scroll-behavior: smooth; /* <--- CHECK TO MAKE SURE THIS IS WORKING */
 }
 
+body {
+	background-color: #01274a;
+	color: #c0c2c2;
+}
+
+.nav_bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap:nowrap;
+	gap: 10px;
+	padding: 30px;
+	align-items: stretch;
+	width: 100vw;
+	
+}
+
+.nav_button {
+	color: #1fffe1;
+	text-decoration: none;
+}
+
+.nav_button_text {
+	color: #c0c2c2;
+}
+
+.nav_button_text:hover {
+	color: #1fffe1;
+	transition: 0.5s;
+}
+
+.intro_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.initial_hi{
+	color: white;
+}
+
+
 
 
