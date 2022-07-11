@@ -39,13 +39,46 @@ body {
 
 .intro_container{
 	display: flex;
+/*	padding: 50px 400px;
+*/	flex-wrap: wrap;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+
 }
 
 .initial_hi{
 	color: white;
+	text-align: left;
+}
+
+.intro_button {
+	background-color: #01274a;
+	text-decoration: none;
+	color: #1fffe1;
+	border: #1fffe1 solid 1px;
+}
+
+.down_arrow {
+	  box-sizing: border-box;
+	  height: 3vw;
+	  width: 3vw;
+	  border-style: solid;
+	  border-color: white;
+	  border-width: 0px 1px 1px 0px;
+	  transform: rotate(45deg);
+	  transition: border-width 150ms ease-in-out;
+}
+
+.down_arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+.arrow_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #01274a;
 }
 
 
