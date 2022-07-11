@@ -7,55 +7,57 @@
 
 <body>
 	<nav class="nav_bar">
-		<a href="#" class="nav_button">1. <span class="nav_button_text">About Me</span></a>
-		<a href="#" class="nav_button">2. <span class="nav_button_text">Portfolio</span></a>
-		<a href="#" class="nav_button">3. <span class="nav_button_text">Contacts</span></a>
+		<a href="#aboutme_container" class="nav_button">1. <span class="nav_button_text">About Me</span></a>
+		<a href="#portfolio_container" class="nav_button">2. <span class="nav_button_text">Portfolio</span></a>
+		<a href="#contact_container" class="nav_button">3. <span class="nav_button_text">Contacts</span></a>
 	</nav>
-
-	<div class="intro_container">
-			<p class="initial_hi">Hi my name is.</p>
-			<h1>Harry Johnston.</h1>
-			<p class="about_short">Ex-engineer starting down the road to developer</p>
-			<a href="#" class="intro_button">Check out my CV!</a>
-	</div>
-	<div class="arrow_container">
-		<a class="down_arrow" href="#"></a>
-	</div>
+	<main>
+		<header class=splash_container>
+			<div class="intro_container">
+				<p class="initial_hi">Hi my name is.</p>
+				<h1>Harry Johnston.</h1>
+				<p class="intro_short">Ex-engineer starting down the road to developer. Im going to write some more dummy text in here to make sure it looks nice when i change it out for real words.</p>
+				<a href="#" class="intro_button">Check out my CV!</a>
+			</div>
+			<div class="arrow_container">
+				<a class="down_arrow" href="#aboutme_container"></a>
+			</div>
+		</header>
 	
-	<div class="aboutme_container">
-		<h2 class="aboutme_title">About Me</h2>
-		<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="picture of me">
-		<p class="aboutme_text">
+		<div id="aboutme_container">
+			<h2 class="aboutme_title">About Me</h2>
+			<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="picture of me">
+			<p class="aboutme_text">
 			Super trouper beams are gonna blind me But I won't feel blue Like I always do 'Cause somewhere in the crowd there's you I was sick and tired of everything When I called you last night from Glasgow All I do is eat and sleep and sing Wishing every show was the last show (wishing every show was the last show) So imagine I was glad to hear you're coming (glad to hear you're coming) Suddenly I feel all right (And suddenly it's gonna be) And it's gonna be so different
-		</p>
-	</div>
+			</p>
+		</div>
 	
-	<div class="porfolio_container">
-		<h2 class="portfolio_title">Portfolio</h2>
-		<div class="project_container">
-			<h3 class="project_title">Project 1</h3>
-			<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1">
-			<p class="project_text">This is some text about my project 1</p>
+		<div id="portfolio_container">
+			<h2 class="portfolio_title">Portfolio</h2>
+			<div class="project_container">
+				<h3 class="project_title">Project 1</h3>
+				<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1">
+				<p class="project_text">This is some text about my project 1</p>
+			</div>
+			<div class="project_container">
+				<h3 class="project_title">Project 2</h3>
+				<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1">
+				<p class="project_text">This is some text about my project 2</p>
+			</div>
+			<div class="project_container">
+				<h3 class="project_title">Project 3</h3>
+				<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1">
+				<p class="project_text">This is some text about my project 3</p>
+			</div>
 		</div>
-		<div class="project_container">
-			<h3 class="project_title">Project 2</h3>
-			<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1">
-			<p class="project_text">This is some text about my project 2</p>
-		</div>
-		<div class="project_container">
-			<h3 class="project_title">Project 3</h3>
-			<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1">
-			<p class="project_text">This is some text about my project 3</p>
-		</div>
-	</div>
 	
-	<footer class="contact_container">
-		<h2 class="contact_title">Contact</h2>
-		<a href="#" class="contact_button">github</a>
-		<a href="#" class="contact_button">linkedin</a>
-		<a href="#" class="contact_button">email</a>
-	</footer>
-
+		<footer id="contact_container">
+			<h2 class="contact_title">Contact</h2>
+			<a href="#" class="contact_button">github</a>
+			<a href="#" class="contact_button">linkedin</a>
+			<a href="#" class="contact_button">email</a>
+		</footer>
+	</main>
 </body>
 
 </html>

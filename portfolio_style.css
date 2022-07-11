@@ -3,12 +3,18 @@
 }
 
 html {
-	scroll-behavior: smooth; /* <--- CHECK TO MAKE SURE THIS IS WORKING */
-}
+	scroll-behavior: smooth;
+	font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+	font-size: 10px;
+	}
 
 body {
 	background-color: #01274a;
 	color: #c0c2c2;
+}
+
+main {
+	padding: 0px 150px;
 }
 
 .nav_bar {
@@ -20,12 +26,18 @@ body {
 	padding: 30px;
 	align-items: stretch;
 	width: 100vw;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #01274a;
 	
 }
 
 .nav_button {
 	color: #1fffe1;
 	text-decoration: none;
+	font-size: 2rem;
+	font-family: "SF Mono", monospace;
 }
 
 .nav_button_text {
@@ -37,18 +49,32 @@ body {
 	transition: 0.5s;
 }
 
+.splash_container{
+	height: 100vh;
+}
+
 .intro_container{
 	display: flex;
-/*	padding: 50px 400px;
-*/	flex-wrap: wrap;
+	flex-wrap: wrap;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+	justify-content: center;
+	min-height: 100vh;
 
 }
 
 .initial_hi{
-	color: white;
-	text-align: left;
+	color: #1fffe1;
+	font-family: "SF Mono", monospace;
+	font-size: 2rem;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+.intro_short {
+	font-size: 2rem;
 }
 
 .intro_button {
@@ -56,22 +82,26 @@ body {
 	text-decoration: none;
 	color: #1fffe1;
 	border: #1fffe1 solid 1px;
+	font-family: "SF Mono", monospace;
+	font-size: 2rem;
 }
 
 .down_arrow {
-	  box-sizing: border-box;
-	  height: 3vw;
-	  width: 3vw;
-	  border-style: solid;
-	  border-color: white;
-	  border-width: 0px 1px 1px 0px;
-	  transform: rotate(45deg);
-	  transition: border-width 150ms ease-in-out;
+	position: absolute;
+	bottom: 30px;
+	box-sizing: border-box;
+	height: 3vw;
+	width: 3vw;
+	border-style: solid; 
+	border-color: white;
+	border-width: 0px 1px 1px 0px;
+	transform: rotate(45deg);
+	transition: border-width 150ms ease-in-out;
 }
 
 .down_arrow:hover {
-  border-bottom-width: 4px;
-  border-right-width: 4px;
+	border-bottom-width: 4px;
+	border-right-width: 4px;
 }
 
 .arrow_container {
