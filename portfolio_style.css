@@ -188,17 +188,23 @@ h1 {
 .project_container {
 	border: white 1px solid;
 	gap: 30px;
+	margin: 30px;
 }
 .project_title {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 2rem;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin:0px;
 }
 
-.product_content {
+.project_content {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-evenly;
 	gap: 30px;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .project_image {
@@ -206,6 +212,7 @@ h1 {
 	width: 100%;
 	border-radius: 5px;
 	max-width: 300px;
+	margin: 20px;
 }
 
 .project_text {
