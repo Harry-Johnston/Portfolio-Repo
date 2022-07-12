@@ -88,7 +88,7 @@ h1 {
 	color: #6e8585;
 }
 
-.intro_button {
+.intro_button, .git_button {
 	background-color: #01274a;
 	text-decoration: none;
 	color: #1fffe1;
@@ -99,7 +99,7 @@ h1 {
 	border-radius: 10px;
 }
 
-.intro_button:hover {
+.intro_button:hover, .git_button:hover {
 	background-color: #1fffe1;
 	color: #01274a;
 }
@@ -134,17 +134,17 @@ h1 {
 	margin: 200px 0px;
 }
 
-.aboutme_title_number, .portfolio_title_number {
+.aboutme_title_number, .portfolio_title_number, .git_title_number {
 	color: #1fffe1;
 }
 
-.aboutme_title, .portfolio_title {
+.aboutme_title, .portfolio_title, .git_title {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 4rem;
 	display: block
 }
 
-.aboutme_title::after, .portfolio_title::after {
+.aboutme_title::after, .portfolio_title::after, .git_title::after {
 	content:"";
 	display: inline-block;
 	position: relative;
@@ -217,8 +217,23 @@ h1 {
 
 .project_text {
 	display: inline-block;
+	max-width: 200px;
+	font-size:2rem;
 }
 
+.git_container {
+	margin: 30px;
+}
+
+.git_text {
+	font-size: 2rem;
+	margin: 10px 0px;
+}
+
+.git_button {
+	position: relative;
+	display: inline-block;
+}
 
 
 
