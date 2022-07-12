@@ -211,7 +211,7 @@ h1 {
 	height: auto;
 	width: 100%;
 	border-radius: 5px;
-	max-width: 300px;
+	max-width: 200px;
 	margin: 20px;
 }
 
@@ -221,7 +221,7 @@ h1 {
 	font-size:2rem;
 }
 
-.git_container {
+#git_container {
 	margin: 200px 0px;
 	display: flex;
 	flex-direction: column;
@@ -244,23 +244,61 @@ h1 {
 	flex-direction: column;
 	align-items: flex-start;
 	position: fixed;
-	bottom: 15px;
+	bottom: 40px;
 	left: 40px;
 	z-index: 100;
 	width: 100%;
 	gap: 15px;
 }
 
+.contact_container::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 90px;
+	margin-left: 9px;
+	background-color: white;
+}
+
 .contact_button {
 	color: white;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .contact_button:hover {
 	color: #1fffe1;
-	animation: fa-bounce 0.7s;
+	animation: fa-bounce 1s;
 }
 
+.footer {
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 40px;
+}
 
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 12;
+	}
+
+	main {
+		padding: 0px 10px;
+	}
+	
+	.contact_container {
+		position: static;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	
+	.contact_button {
+		color: white;
+		font-size: 3rem;
+	}
+	
+	.contact_container::after {
+		display: none;
+	}
+}
 
 
