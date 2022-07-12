@@ -129,6 +129,89 @@ h1 {
   background-color: #01274a;
 }
 
+#aboutme_container {
+	display: block;
+	margin: 200px 0px;
+}
+
+.aboutme_title_number, .portfolio_title_number {
+	color: #1fffe1;
+}
+
+.aboutme_title, .portfolio_title {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 4rem;
+	display: block
+}
+
+.aboutme_title::after, .portfolio_title::after {
+	content:"";
+	display: inline-block;
+	position: relative;
+	height: 1px;
+	top: -10px;
+	left: 30px;
+	background-color: white;
+	width: 100%;
+}
+
+.aboutme_img {
+	height: auto;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.aboutme_body {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.aboutme_text {
+	font-size: 2rem;
+	font-weight: 20;
+	max-width: 400px;
+}
+
+.aboutme_img {
+	max-width: 400px;
+}
+
+#portfolio_container {
+	margin: 0 auto;
+	display: block;
+	max-width: 800px;
+}
+
+.project_container {
+	border: white 1px solid;
+	gap: 30px;
+}
+.project_title {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2rem;
+}
+
+.product_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.project_image {
+	height: auto;
+	width: 100%;
+	border-radius: 5px;
+	max-width: 300px;
+}
+
+.project_text {
+	display: inline-block;
+}
+
 
 
 
