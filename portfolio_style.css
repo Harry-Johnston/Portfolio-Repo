@@ -152,14 +152,58 @@ h1 {
 	height: 1px;
 	top: -10px;
 	left: 30px;
-	background-color: white;
+	background-color: #737f9b;
 	width: 100%;
 }
 
+.aboutme_img_container {
+	position: relative;
+	float: left;
+}
+
+.aboutme_cover {
+	background: #1fffe1;
+	bottom: 0;
+	display: block;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	border-radius: 10px;
+}
+
+.aboutme_border {
+	display: block;
+	position: absolute;
+	border-radius: 10px;
+	border-right: 3px solid #1fffe1;
+	border-bottom: 3px solid #1fffe1;
+	top: 0;
+	left: 0;
+	right: -30px;
+	bottom: -30px;
+	z-index: 1;
+}
+
+.aboutme_img_container:hover .aboutme_cover{
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.aboutme_img_container:hover .aboutme_border {
+	right: -10px;
+	bottom: -10px;
+	transition: right 0.5s, bottom 0.5s;
+
+}
+
 .aboutme_img {
+	display: block;
 	height: auto;
 	width: 100%;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .aboutme_body {
@@ -189,6 +233,8 @@ h1 {
 .project_container {
 	gap: 30px;
 	margin: 30px;
+	border: 1px solid #737f9b;
+	border-radius: 7px;
 }
 .project_title {
 	font-family: 'Roboto Mono', monospace;
@@ -295,7 +341,7 @@ h1 {
 
 @media screen and (max-width: 800px) {
 	html {
-		font-size: 12;
+		font-size: 12px;
 	}
 
 	main {
