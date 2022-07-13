@@ -1,0 +1,304 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+	font-size: 10px;
+	}
+
+body {
+	background-color: #01274a;
+	color: #c0c2c2;
+}
+
+main {
+	padding: 0px 150px;
+}
+
+.nav_bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap:nowrap;
+	gap: 10px;
+	padding: 30px;
+	align-items: stretch;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #01274a;
+	
+}
+
+.nav_button {
+	color: #1fffe1;
+	text-decoration: none;
+	font-size: 2rem;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 100;
+}
+
+.nav_button_text {
+	color: #c0c2c2;
+}
+
+.nav_button_text:hover {
+	color: #1fffe1;
+	transition: 0.5s;
+}
+
+.splash_container{
+	height: 100vh;
+}
+
+.intro_container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	height: 100vh;
+
+}
+
+.initial_hi{
+	color: #1fffe1;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 6rem;
+	margin: 10px 0px;
+	color: #b0cfcf;
+}
+
+.intro_subheading {
+	font-size: 5rem;
+	margin: 10px 0px;
+	color: #87a1a1;
+}
+
+.intro_short {
+	font-size: 2rem;
+	color: #6e8585;
+}
+
+.intro_button, .git_button {
+	background-color: #01274a;
+	text-decoration: none;
+	color: #1fffe1;
+	border: #1fffe1 solid 1px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2rem;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.intro_button:hover, .git_button:hover {
+	background-color: #1fffe1;
+	color: #01274a;
+}
+
+.down_arrow {
+	position: absolute;
+	bottom: 30px;
+	box-sizing: border-box;
+	height: 3vw;
+	width: 3vw;
+	border-style: solid; 
+	border-color: white;
+	border-width: 0px 1px 1px 0px;
+	transform: rotate(45deg);
+	transition: border-width 150ms ease-in-out;
+}
+
+.down_arrow:hover {
+	border-bottom-width: 4px;
+	border-right-width: 4px;
+}
+
+.arrow_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #01274a;
+}
+
+#aboutme_container {
+	display: block;
+	margin: 200px 0px;
+}
+
+.aboutme_title_number, .portfolio_title_number, .git_title_number {
+	color: #1fffe1;
+}
+
+.aboutme_title, .portfolio_title, .git_title {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 4rem;
+	display: block
+}
+
+.aboutme_title::after, .portfolio_title::after, .git_title::after {
+	content:"";
+	display: inline-block;
+	position: relative;
+	height: 1px;
+	top: -10px;
+	left: 30px;
+	background-color: white;
+	width: 100%;
+}
+
+.aboutme_img {
+	height: auto;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.aboutme_body {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.aboutme_text {
+	font-size: 2rem;
+	font-weight: 20;
+	max-width: 400px;
+}
+
+.aboutme_img {
+	max-width: 400px;
+}
+
+#portfolio_container {
+	margin: 200px auto;
+	display: block;
+	max-width: 800px;
+}
+
+.project_container {
+	border: white 1px solid;
+	gap: 30px;
+	margin: 30px;
+}
+.project_title {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2rem;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin:0px;
+}
+
+.project_content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 30px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.project_image {
+	height: auto;
+	width: 100%;
+	border-radius: 5px;
+	max-width: 200px;
+	margin: 20px;
+}
+
+.project_text {
+	display: inline-block;
+	max-width: 400px;
+	font-size:2rem;
+}
+
+#git_container {
+	margin: 200px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.git_text {
+	font-size: 2rem;
+	margin: 10px 0px;
+}
+
+.git_button {
+	display: inline-block;
+	margin: 10px 0px;
+}
+
+.contact_container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: fixed;
+	bottom: 40px;
+	left: 40px;
+	z-index: 100;
+	width: 100%;
+	gap: 15px;
+}
+
+.contact_container::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 90px;
+	margin-left: 9px;
+	background-color: white;
+}
+
+.contact_button {
+	color: white;
+	font-size: 2rem;
+}
+
+.contact_button:hover {
+	color: #1fffe1;
+	animation: fa-bounce 1s;
+}
+
+.footer {
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 40px;
+}
+
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 12;
+	}
+
+	main {
+		padding: 0px 10px;
+	}
+	
+	.contact_container {
+		position: static;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	
+	.contact_button {
+		color: white;
+		font-size: 3rem;
+	}
+	
+	.contact_container::after {
+		display: none;
+	}
+}
+
+
