@@ -4,7 +4,7 @@
 
 html {
 	scroll-behavior: smooth;
-	font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+	font-family: "Calibri","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 	font-size: 10px;
 	}
 
@@ -14,21 +14,21 @@ body {
 }
 
 main {
-	padding: 0px 150px;
+	padding: 0 150px;
 }
 
 .nav_bar {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	flex-wrap:nowrap;
+	flex-wrap: nowrap;
 	gap: 10px;
 	padding: 30px;
 	align-items: stretch;
 	width: 100%;
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	background-color: #01274a;
 	
 }
@@ -43,6 +43,7 @@ main {
 
 .nav_button_text {
 	color: #c0c2c2;
+	white-space: nowrap;
 }
 
 .nav_button_text:hover {
@@ -73,13 +74,13 @@ main {
 
 h1 {
 	font-size: 6rem;
-	margin: 10px 0px;
+	margin: 10px 0;
 	color: #b0cfcf;
 }
 
 .intro_subheading {
 	font-size: 5rem;
-	margin: 10px 0px;
+	margin: 10px 0;
 	color: #87a1a1;
 }
 
@@ -109,11 +110,11 @@ h1 {
 	position: absolute;
 	bottom: 30px;
 	box-sizing: border-box;
-	height: 3vw;
-	width: 3vw;
+	height: 30px;
+	width: 30px;
 	border-style: solid; 
 	border-color: white;
-	border-width: 0px 1px 1px 0px;
+	border-width: 0 1px 1px 0;
 	transform: rotate(45deg);
 	transition: border-width 150ms ease-in-out;
 }
@@ -132,7 +133,7 @@ h1 {
 
 #aboutme_container {
 	display: block;
-	margin: 200px 0px;
+	margin: 200px 0;
 }
 
 .aboutme_title_number, .portfolio_title_number, .git_title_number {
@@ -161,7 +162,7 @@ h1 {
 	float: left;
 }
 
-.aboutme_cover {
+.aboutme_img_cover {
 	background: #1fffe1;
 	bottom: 0;
 	display: block;
@@ -172,9 +173,10 @@ h1 {
 	top: 0;
 	z-index: 1;
 	border-radius: 10px;
+	transition: opacity 0.5s;
 }
 
-.aboutme_border {
+.aboutme_img_border {
 	display: block;
 	position: absolute;
 	border-radius: 10px;
@@ -185,14 +187,15 @@ h1 {
 	right: -30px;
 	bottom: -30px;
 	z-index: 1;
+	transition: bottom 0.5s, right 0.5s
 }
 
-.aboutme_img_container:hover .aboutme_cover{
+.aboutme_img_container:hover .aboutme_img_cover{
 	opacity: 0;
 	transition: opacity 0.5s;
 }
 
-.aboutme_img_container:hover .aboutme_border {
+.aboutme_img_container:hover .aboutme_img_border {
 	right: -10px;
 	bottom: -10px;
 	transition: right 0.5s, bottom 0.5s;
@@ -210,14 +213,16 @@ h1 {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
 	gap: 40px;
 }
 
 .aboutme_text {
 	font-size: 2rem;
-	font-weight: 20;
-	max-width: 400px;
+	font-weight: 10;
+	max-width: 600px;
+	line-height: 3rem;
 }
 
 .aboutme_img {
@@ -241,7 +246,7 @@ h1 {
 	font-size: 2rem;
 	padding-top: 10px;
 	padding-left: 10px;
-	margin:0px;
+	margin:0;
 	color: #1fffe1;
 }
 
@@ -259,30 +264,37 @@ h1 {
 	width: 100%;
 	border-radius: 5px;
 	max-width: 200px;
-	margin: 20px;
+	object-fit: contain;
 }
 
 .project_text {
 	display: inline-block;
 	max-width: 400px;
 	font-size:2rem;
+	margin: 20px;
 }
 
 #git_container {
-	margin: 200px 0px;
+	margin: 200px 0;
+	display: block;
+}
+
+.git_content {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .git_text {
 	font-size: 2rem;
-	margin: 10px 0px;
-	max-width: 800px;
+	margin: 10px 0;
+	max-width: 600px;
+	text-align: center;
 }
 
 .git_button {
 	display: inline-block;
-	margin: 10px 0px;
+	margin: 10px 0;
 }
 
 .contact_container {
@@ -329,7 +341,7 @@ h1 {
 	width: 3vw;
 	border-style: solid; 
 	border-color: white;
-	border-width: 0px 1px 1px 0px;
+	border-width: 0 1px 1px 0;
 	transform: rotate(225deg);
 	transition: border-width 150ms ease-in-out;
 }
@@ -345,9 +357,9 @@ h1 {
 	}
 
 	main {
-		padding: 0px 10px;
+		padding: 0 10px;
 	}
-	
+
 	.contact_container {
 		position: static;
 		flex-direction: row;
@@ -363,5 +375,12 @@ h1 {
 		display: none;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.nav_button {
+		display: none;
+	}
+}
+
 
 
