@@ -4,7 +4,7 @@
 
 html {
 	scroll-behavior: smooth;
-	font-family: "Calibri","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 10px;
 	}
 
@@ -88,6 +88,7 @@ h1 {
 	font-size: 2rem;
 	color: #6e8585;
 	max-width: 800px;
+	font-weight: 100;
 }
 
 .intro_button, .git_button {
@@ -230,9 +231,8 @@ h1 {
 }
 
 #portfolio_container {
-	margin: 200px auto;
+	margin: 200px 0;
 	display: block;
-	max-width: 800px;
 }
 
 .project_container {
@@ -260,11 +260,9 @@ h1 {
 }
 
 .project_image {
-	height: auto;
-	width: 100%;
 	border-radius: 5px;
-	max-width: 200px;
-	object-fit: contain;
+	width: 400px;
+	object-fit: cover;
 }
 
 .project_text {
@@ -272,6 +270,7 @@ h1 {
 	max-width: 400px;
 	font-size:2rem;
 	margin: 20px;
+	font-weight: 100;
 }
 
 #git_container {
@@ -288,7 +287,7 @@ h1 {
 .git_text {
 	font-size: 2rem;
 	margin: 10px 0;
-	max-width: 600px;
+	max-width: 700px;
 	text-align: center;
 }
 
@@ -367,12 +366,17 @@ h1 {
 	}
 	
 	.contact_button {
-		color: white;
+		color: #737f9b;
 		font-size: 3rem;
 	}
 	
 	.contact_container::after {
 		display: none;
+	}
+
+	.project_image{
+		width: 100%;
+		height: auto;
 	}
 }
 
