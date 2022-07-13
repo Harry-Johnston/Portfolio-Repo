@@ -86,6 +86,7 @@ h1 {
 .intro_short {
 	font-size: 2rem;
 	color: #6e8585;
+	max-width: 800px;
 }
 
 .intro_button, .git_button {
@@ -186,7 +187,6 @@ h1 {
 }
 
 .project_container {
-	border: white 1px solid;
 	gap: 30px;
 	margin: 30px;
 }
@@ -196,6 +196,7 @@ h1 {
 	padding-top: 10px;
 	padding-left: 10px;
 	margin:0px;
+	color: #1fffe1;
 }
 
 .project_content {
@@ -225,13 +226,12 @@ h1 {
 	margin: 200px 0px;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
 }
 
 .git_text {
 	font-size: 2rem;
 	margin: 10px 0px;
+	max-width: 800px;
 }
 
 .git_button {
@@ -247,7 +247,6 @@ h1 {
 	bottom: 40px;
 	left: 40px;
 	z-index: 100;
-	width: 100%;
 	gap: 15px;
 }
 
@@ -257,11 +256,11 @@ h1 {
 	width: 1px;
 	height: 90px;
 	margin-left: 9px;
-	background-color: white;
+	background-color: #737f9b;
 }
 
 .contact_button {
-	color: white;
+	color: #737f9b;
 	font-size: 2rem;
 }
 
@@ -274,6 +273,24 @@ h1 {
 	font-size: 1.5rem;
 	text-align: center;
 	padding: 40px;
+}
+
+.up_arrow {
+	position: relative;
+	bottom: 30px;
+	box-sizing: border-box;
+	height: 3vw;
+	width: 3vw;
+	border-style: solid; 
+	border-color: white;
+	border-width: 0px 1px 1px 0px;
+	transform: rotate(225deg);
+	transition: border-width 150ms ease-in-out;
+}
+
+.up_arrow:hover {
+	border-bottom-width: 4px;
+	border-right-width: 4px;
 }
 
 @media screen and (max-width: 800px) {
