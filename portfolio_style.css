@@ -105,12 +105,12 @@ h1 {
 .intro_button:hover, .git_button:hover {
 	background-color: #1fffe1;
 	color: #01274a;
+	transition: background-color 0.4s, color 0.4s;
 }
 
 .down_arrow {
 	position: absolute;
 	bottom: 30px;
-	box-sizing: border-box;
 	height: 30px;
 	width: 30px;
 	border-style: solid; 
@@ -118,6 +118,15 @@ h1 {
 	border-width: 0 1px 1px 0;
 	transform: rotate(45deg);
 	transition: border-width 150ms ease-in-out;
+}
+
+.down_arrow::after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: -15px;
+	right: -15px;
 }
 
 .down_arrow:hover {
@@ -130,6 +139,7 @@ h1 {
   align-items: center;
   justify-content: center;
   background-color: #01274a;
+	padding: 30px;
 }
 
 #aboutme_container {
@@ -144,7 +154,10 @@ h1 {
 .aboutme_title, .portfolio_title, .git_title {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 4rem;
-	display: block
+	display: flex;
+	position: relative;
+	align-items: center;
+	white-space: nowrap;
 }
 
 .aboutme_title::after, .portfolio_title::after, .git_title::after {
@@ -152,7 +165,6 @@ h1 {
 	display: inline-block;
 	position: relative;
 	height: 1px;
-	top: -10px;
 	left: 30px;
 	background-color: #737f9b;
 	width: 100%;
@@ -324,6 +336,7 @@ h1 {
 .contact_button:hover {
 	color: #1fffe1;
 	animation: fa-bounce 1s;
+	transition: color 0.3s;
 }
 
 .footer {
@@ -343,6 +356,15 @@ h1 {
 	border-width: 0 1px 1px 0;
 	transform: rotate(225deg);
 	transition: border-width 150ms ease-in-out;
+}
+
+.up_arrow::after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: -15px;
+	right: -15px;
 }
 
 .up_arrow:hover {
