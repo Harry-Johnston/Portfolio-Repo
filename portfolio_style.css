@@ -278,11 +278,28 @@ h1 {
 }
 
 .project_text {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	max-width: 400px;
 	font-size:2rem;
 	margin: 20px;
 	font-weight: 100;
+}
+
+.project_link {
+	font-size: 3rem;
+	display: block;
+	color: white;
+	padding-top: 40px;
+	text-align: center;
+	position: relative;
+	transition: color 0.5s, bottom 0.5s;
+}
+
+.project_link:hover {
+	color: #1fffe1;
+	bottom: 7px;
+	transition: color 0.5s, bottom 0.5s;
 }
 
 #git_container {
