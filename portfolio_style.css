@@ -381,9 +381,27 @@ h1 {
   transition: color 0.3s;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .footer {
   font-size: 1.5rem;
   text-align: center;
+}
+
+.footer_ghub {
+  margin: 0 auto;
+  color: #87a1a1;
+  font-size: 2rem;
+}
+
+.footer_ghub:hover {
+  color: #BB86FC;
+  animation: fa-bounce 1s;
+  transition: color 0.3s;
 }
 
 .up_arrow {
