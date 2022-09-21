@@ -236,9 +236,9 @@ h1 {
 }
 
 .aboutme_text_container {
-  background-color: rgba(255, 255, 255, 0.1098039216);
+  background-color: rgba(255, 255, 255, 0.0901960784);
   border-radius: 7px;
-  padding: 5px;
+  padding: 15px;
 }
 
 .aboutme_img {
@@ -254,7 +254,7 @@ h1 {
   gap: 30px;
   margin: 30px;
   border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0.1098039216);
+  background-color: rgba(255, 255, 255, 0.0901960784);
 }
 
 .project_title {
@@ -289,6 +289,7 @@ h1 {
   font-size: 1.6rem;
   margin: 20px;
   font-weight: 100;
+  line-height: 2.5rem;
 }
 
 .project_link {
@@ -328,7 +329,7 @@ h1 {
 }
 
 #git_container {
-  margin: 200px 0;
+  margin: 100px 0;
   display: block;
 }
 
@@ -347,7 +348,7 @@ h1 {
 
 .git_button {
   display: inline-block;
-  margin: 10px 0;
+  margin: 40px 0;
 }
 
 .contact_container {
@@ -398,7 +399,7 @@ footer {
   font-size: 2rem;
 }
 
-.footer_ghub:hover {
+.footer_ghub :hover {
   color: #BB86FC;
   animation: fa-bounce 1s;
   transition: color 0.3s;
@@ -471,7 +472,7 @@ footer {
     padding: 0 10px;
   }
   .arrow_container {
-    display: none;
+    bottom: 10px;
   }
   .contact_container {
     position: static;
@@ -493,13 +494,36 @@ footer {
     display: none;
   }
   .aboutme_title, .portfolio_title, .git_title {
-    margin: 50px;
+    font-size: 3rem;
+    margin-right: 30px;
   }
 }
 @media screen and (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .intro_button {
+    padding: 10px;
+  }
   .nav_button {
     display: none;
     padding: 0;
+  }
+  .aboutme_img_border {
+    border-radius: 10px;
+    border-right: 3px solid #BB86FC;
+    border-bottom: 3px solid #BB86FC;
+    right: -10px;
+    bottom: -10px;
+  }
+  .aboutme_title, .portfolio_title, .git_title {
+    font-size: 2.5rem;
+  }
+  .intro_container {
+    justify-content: unset;
+  }
+  #git_container {
+    margin: 100px 0;
   }
 }
 
