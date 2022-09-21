@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #01274a;
+  background-color: #121212;
   color: #c0c2c2;
 }
 
@@ -29,11 +29,11 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #01274a;
+  background-color: #121212;
 }
 
 .nav_button {
-  color: #1fffe1;
+  color: #BB86FC;
   text-decoration: none;
   font-size: 2rem;
   font-family: "Roboto Mono", monospace;
@@ -46,7 +46,7 @@ main {
 }
 
 .nav_button_text:hover {
-  color: #1fffe1;
+  color: #BB86FC;
   transition: 0.5s;
 }
 
@@ -64,7 +64,7 @@ main {
 }
 
 .initial_hi {
-  color: #1fffe1;
+  color: #BB86FC;
   font-family: "Roboto Mono", monospace;
   font-size: 2rem;
   font-weight: 400;
@@ -90,10 +90,10 @@ h1 {
 }
 
 .intro_button, .git_button {
-  background-color: #01274a;
+  background-color: #121212;
   text-decoration: none;
-  color: #1fffe1;
-  border: #1fffe1 solid 1px;
+  color: #BB86FC;
+  border: #BB86FC solid 1px;
   font-family: "Roboto Mono", monospace;
   font-size: 2rem;
   padding: 20px;
@@ -101,8 +101,8 @@ h1 {
 }
 
 .intro_button:hover, .git_button:hover {
-  background-color: #1fffe1;
-  color: #01274a;
+  background-color: #BB86FC;
+  color: #121212;
   transition: background-color 0.4s, color 0.4s;
 }
 
@@ -136,7 +136,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #01274a;
+  background-color: #121212;
   padding: 30px;
 }
 
@@ -146,7 +146,7 @@ h1 {
 }
 
 .aboutme_title_number, .portfolio_title_number, .git_title_number {
-  color: #1fffe1;
+  color: #BB86FC;
 }
 
 .aboutme_title, .portfolio_title, .git_title {
@@ -164,7 +164,7 @@ h1 {
   position: relative;
   height: 1px;
   left: 30px;
-  background-color: #737f9b;
+  background-color: #87a1a1;
   width: 100%;
 }
 
@@ -174,7 +174,7 @@ h1 {
 }
 
 .aboutme_img_cover {
-  background: #1fffe1;
+  background: #BB86FC;
   bottom: 0;
   display: block;
   left: 0;
@@ -191,8 +191,8 @@ h1 {
   display: block;
   position: absolute;
   border-radius: 10px;
-  border-right: 3px solid #1fffe1;
-  border-bottom: 3px solid #1fffe1;
+  border-right: 3px solid #BB86FC;
+  border-bottom: 3px solid #BB86FC;
   top: 0;
   left: 0;
   right: -30px;
@@ -229,10 +229,16 @@ h1 {
 }
 
 .aboutme_text {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 10;
   max-width: 600px;
   line-height: 3rem;
+}
+
+.aboutme_text_container {
+  background-color: rgba(255, 255, 255, 0.1098039216);
+  border-radius: 7px;
+  padding: 5px;
 }
 
 .aboutme_img {
@@ -247,8 +253,8 @@ h1 {
 .project_container {
   gap: 30px;
   margin: 30px;
-  border: 1px solid #737f9b;
   border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.1098039216);
 }
 
 .project_title {
@@ -257,7 +263,7 @@ h1 {
   padding-top: 10px;
   padding-left: 10px;
   margin: 0;
-  color: #1fffe1;
+  color: #BB86FC;
 }
 
 .project_content {
@@ -267,6 +273,7 @@ h1 {
   gap: 30px;
   align-items: center;
   flex-wrap: wrap;
+  margin: 20px;
 }
 
 .project_image {
@@ -279,7 +286,7 @@ h1 {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 20px;
   font-weight: 100;
 }
@@ -288,16 +295,36 @@ h1 {
   font-size: 3rem;
   display: block;
   color: white;
-  padding-top: 40px;
+  margin: 15px 0;
   text-align: center;
   position: relative;
   transition: color 0.5s, bottom 0.5s;
 }
 
 .project_link:hover {
-  color: #1fffe1;
+  color: #BB86FC;
   bottom: 7px;
   transition: color 0.5s, bottom 0.5s;
+}
+
+.project_link_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.live {
+  border: 1px solid #87a1a1;
+  padding: 5px;
+  font-size: 2rem;
+  transition: border 0.5s;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.live:hover {
+  border: 1px solid #BB86FC;
+  transition: border 0.5s;
 }
 
 #git_container {
@@ -312,7 +339,7 @@ h1 {
 }
 
 .git_text {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 10px 0;
   max-width: 700px;
   text-align: center;
@@ -340,16 +367,16 @@ h1 {
   width: 1px;
   height: 90px;
   margin-left: 9px;
-  background-color: #737f9b;
+  background-color: #87a1a1;
 }
 
 .contact_button {
-  color: #737f9b;
+  color: #87a1a1;
   font-size: 2rem;
 }
 
 .contact_button:hover {
-  color: #1fffe1;
+  color: #BB86FC;
   animation: fa-bounce 1s;
   transition: color 0.3s;
 }
@@ -357,7 +384,6 @@ h1 {
 .footer {
   font-size: 1.5rem;
   text-align: center;
-  padding: 40px;
 }
 
 .up_arrow {
@@ -387,6 +413,38 @@ h1 {
   border-right-width: 4px;
 }
 
+.js-scroll {
+  transition: opacity 500ms;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 800px) {
   html {
     font-size: 12px;
@@ -403,7 +461,7 @@ h1 {
     justify-content: space-evenly;
   }
   .contact_button {
-    color: #737f9b;
+    color: #87a1a1;
     font-size: 3rem;
   }
   .contact_container::after {
@@ -415,6 +473,9 @@ h1 {
   }
   .nav_bar {
     display: none;
+  }
+  .aboutme_title, .portfolio_title, .git_title {
+    margin: 50px;
   }
 }
 @media screen and (max-width: 500px) {

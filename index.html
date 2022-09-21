@@ -1,119 +1,189 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>I'm Harry Johnston!</title>
-	<link rel="stylesheet" href="portfolio_style.css" type="text/css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/584be2f2ed.js" crossorigin="anonymous"></script>
-	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <title>Harry Johnston | Full-Stack Dev</title>
+    <link rel="stylesheet" href="portfolio_style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Roboto+Mono:wght@100&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/584be2f2ed.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-	<nav class="nav_bar">
-		<a href="#aboutme_container" class="nav_button">
-			01. <span class="nav_button_text">About Me</span>
-		</a>
-		<a href="#portfolio_container" class="nav_button">
-			02. <span class="nav_button_text">Portfolio</span>
-		</a>
-		<a href="#git_container" class="nav_button">
-			03. <span class="nav_button_text">Get in Touch</span>
-		</a>
-	</nav>
-	<main>
-		<header class=splash_container>
-			<div class="intro_container">
-				<p class="initial_hi">Hi my name is</p>
-				<h1>Harry Johnston.</h1>
-				<p class="intro_subheading">I'm learning to be a developer</p>
-				<p class="intro_short">Ex-engineer starting down the road to developer. Im going to write some more dummy text in here to make sure it looks nice when i change it out for real words.</p>
-				<a href="#" class="intro_button">Check out my CV!</a>
-			</div>
-			<a class="arrow_container" href="#aboutme_container">
-				<div class="down_arrow"></div>
-			</a>
-		</header>
-	
-		<section id="aboutme_container">
-			<h2 class="aboutme_title">
-				<span class="aboutme_title_number">01.</span> About Me
-			</h2>
-			<article class="aboutme_body">
-				<p class="aboutme_text">
-					Super trouper beams are gonna blind me But I won't feel blue Like I always do 'Cause somewhere in the crowd there's you I was sick and tired of everything When I called you last night from Glasgow All I do is eat and sleep and sing Wishing every show was the last show (wishing every show was the last show) So imagine I was glad to hear you're coming (glad to hear you're coming) Suddenly I feel all right (And suddenly it's gonna be) And it's gonna be so different
-				</p>
-				<div class="aboutme_img_container">
-					<span class="aboutme_img_cover"></span>
-					<span class="aboutme_img_border"></span>
-					<img src="headshot.jpg"
-					alt="picture of me" 
-					class="aboutme_img">
-				</div>
-			</article>
-		</section>
-	
-		<section id="portfolio_container">
-			<h2 class="portfolio_title">
-				<span class="portfolio_title_number">02.</span> Portfolio
-			</h2>
-			<div class="project_container">
-				<h3 class="project_title">Project 01</h3>
-				<div class="project_content">
-					<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1" class="project_image">
-					<p class="project_text">
-						Green vines attached to the trunk of the tree had wound themselves toward the top of the canopy. Ants used the vine as their private highway, avoiding all the creases and crags of the bark, to freely move at top speed from top to bottom or bottom to top depending on their current chore. At least this was the way it was supposed to be. Something had damaged the vine overnight halfway up the tree leaving a gap in the once pristine ant highway.
-						<a href="#" class="project_link">
-							<i class="fa-brands fa-github"></i>
-						</a>
-					</p>
-				</div>
+<nav class="nav_bar">
+    <a href="#aboutme_container" class="nav_button">
+        01. <span class="nav_button_text">About Me</span>
+    </a>
+    <a href="#portfolio_container" class="nav_button">
+        02. <span class="nav_button_text">Portfolio</span>
+    </a>
+    <a href="#git_container" class="nav_button">
+        03. <span class="nav_button_text">Get in Touch</span>
+    </a>
+</nav>
+<main>
+    <header class=splash_container>
+        <div class="intro_container">
+            <p class="initial_hi test">Hi my name is</p>
+            <h1>Harry Johnston.</h1>
+            <!--            <p class="intro_subheading">I am a </p>-->
+            <p class="intro_short">I am a full-stack web developer and avid climber with a passion for solving technical
+                problems in the office and in the mountains</p>
+            <a href="assets/Harry%20Johnston.pdf" download="HarryJohnston.pdf" class="intro_button">Check out my CV!</a>
+        </div>
+        <a class="arrow_container" href="#aboutme_container">
+            <div class="down_arrow"></div>
+        </a>
+    </header>
+    <section id="aboutme_container">
+        <h2 class="aboutme_title">
+            <span class="aboutme_title_number">01.</span> About Me
+        </h2>
+        <article class="aboutme_body js-scroll slide-right">
+            <div class="aboutme_text_container">
+                <p class="aboutme_text">
+                    Hello again!
+                </p>
+                <p class="aboutme_text">
+                    I'm an enthusiastic software developer due to graduate from IO Academy's Full-Stack track in October. My engineering background - specifically in construction - has given me a love of solving problems at all scales and a healthy fear of 3D modelling.
+                </p>
+                <p class="aboutme_text">
+                    I completed my masters in 2017 and spent the next couple of years working as a supply chain specialist, analysing data with VBA and building data visualisations. I then spent 2 years working as a consultant engineer. After finding the regulated and restrictive environment limited my design freedom, I decided to improve the programming skills I picked up in university.
+                </p>
+                <p class="aboutme_text">
+                    When I'm not working, I am an avid climber (some would call me obsessed) and have a general love of everything related to our wild spaces and the outdoors.
+                </p>
+                <p class="aboutme_text">
+                    I'm excited to turn my problem solving abilities to the world of tech
+                </p>
+            </div>
+            <div class="aboutme_img_container">
+                <span class="aboutme_img_cover"></span>
+                <span class="aboutme_img_border"></span>
+                <img src="assets/headshot.jpg"
+                     alt="picture of me"
+                     class="aboutme_img">
+            </div>
+        </article>
+    </section>
+    <section id="portfolio_container">
+        <h2 class="portfolio_title">
+            <span class="portfolio_title_number">02.</span> Portfolio
+        </h2>
+        <div class="project_container js-scroll slide-right">
+            <h3 class="project_title">Project 01</h3>
+            <div class="project_content">
+                <img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1"
+                     class="project_image">
+                <div>
+                    <p class="project_text">
+                        A social media app that's cool as hell!
+                    </p>
+                    <p class="project_text">
+                        A Object Oriented PHP project where we built out a full-stack social media app within a scrum
+                        team. Using a MySQL database to feed the back-end we applied SOLID principles to construct input
+                        validators & sanitisers as well as hydrators for displaying the user data. The sites front-end
+                        was constructed using SASS to enable mixins, nesting and CSS variables.
 
-			</div>
-			<div class="project_container">
-				<h3 class="project_title">Project 02</h3>
-				<div class="project_content">
-					<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1" class="project_image">
-					<p class="project_text">
-						Her eyebrows were a shade darker than her hair. They were thick and almost horizontal, emphasizing the depth of her eyes. She was rather handsome than beautiful. Her face was captivating by reason of a certain frankness of expression and a contradictory subtle play of features. Her manner was engaging.
-						<a href="#" class="project_link">
-							<i class="fa-brands fa-github"></i>
-						</a>
-					</p>
-				</div>
-			</div>
-			<div class="project_container">
-				<h3 class="project_title">Project 03</h3>
-				<div class="project_content">
-					<img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1" class="project_image">
-					<p class="project_text">
-						At that moment he had a thought that he'd never imagine he'd consider. "I could just cheat," he thought, "and that would solve the problem." He tried to move on from the thought but it was persistent. It didn't want to go away and, if he was honest with himself, he didn't want it to.
-						<a href="#" class="project_link">
-							<i class="fa-brands fa-github"></i>
-						</a>
-					</p>
-				</div>
-			</div>
-		</section>
-		<section id="git_container">
-			<h2 class="git_title"><span class="git_title_number">03.</span> Get in Touch </h2>
-			<div class="git_content">
-					<p class="git_text">I am currently looking for opportunities and my inbox is always open. If it's a enquiry about collaborating or simply a question about anything on this site please don't hesitate to get in touch!</p>
-					<a href="#" class="git_button">Say Hi!</a>
-			</div>
-		</section>
-		<a class="arrow_container" href="#">
-			<div class="up_arrow" ></div>
-		</a>
-		<div class="contact_container">
-			<a href="https://www.linkedin.com/in/harry-johnston-462322105" class="contact_button"><i class="fa-brands fa-linkedin"></i></a>
-			<a href="#" class="contact_button"><i class="fa-solid fa-envelope"></i></a>
-			<a href="https://github.com/Harry-Johnston" class="contact_button"><i class="fa-brands fa-github"></i></a>
-		</div>
-		<footer>
-			<p class="footer">Designed and built by Harry Johnston </p>
-		</footer>
-	</main>
+                        A login system was in progress but incomplete at the end of the sprint so is planned for a
+                        future date.
+                    </p>
+                    <div class="project_link_container">
+                        <a href="#" class="project_link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="project_link live">LIVE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project_container js-scroll slide-left">
+            <h3 class="project_title">Project 02</h3>
+            <div class="project_content">
+                <img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1"
+                     class="project_image">
+                <div>
+                    <p class="project_text">
+                        A javascript penguin surf racing game, need i say more...
+                    </p>
+                    <p class="project_text">
+                        A vanilla javascript game which uses alternating left and right arrow keys to move the penguin towards the finish. We made use of advanced CSS styling for an animated background and implemented a leaderboard using LocalStorage. All the pixel art sprites were AI generated for extra pizazz.
+                    </p>
+                    <div class="project_link_container">
+                        <a href="#" class="project_link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="project_link live">LIVE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project_container js-scroll slide-right">
+            <h3 class="project_title">Project 03</h3>
+            <div class="project_content">
+                <img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1"
+                     class="project_image">
+                <div>
+                    <p class="project_text">
+                        A React email client with a frosty theme.
+                    </p>
+                    <p class="project_text">
+                        Utilising React to consume a pre-built API, we built an email client based on a given wireframe. We used Bootstrap to ensure consistency with the wireframe and the app made use of Fetch to pull from the API. Users can send and receive mail and the display shows unread emails and sent items.
+                    </p>
+                    <div class="project_link_container">
+                        <a href="#" class="project_link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="project_link live">LIVE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project_container js-scroll slide-left">
+            <h3 class="project_title">Project 04</h3>
+            <div class="project_content">
+                <img src="https://y.yarn.co/ccf53d27-000e-4020-97e8-2a39bc93aed8_screenshot.jpg" alt="project photo1"
+                     class="project_image">
+                <div>
+                    <p class="project_text">
+                        A climbing training tracker built with a PHP & MySQL back-end.
+                    </p>
+                    <p class="project_text">
+                        I built a training log so I could see my strength improvements over time. The back-end groups entries by date, since one day will often include multiple workouts. The ultimate ambition is to turn this into a full CRUD application and implement profiles so it can be shared with my training buddies.
+                    </p>
+                    <div class="project_link_container">
+                        <a href="#" class="project_link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="project_link live">LIVE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="git_container">
+        <h2 class="git_title"><span class="git_title_number">03.</span> Get in Touch </h2>
+        <div class="git_content js-scroll slide-right">
+            <p class="git_text">I am currently looking for opportunities and my inbox is always open. If it's a
+                enquiry about collaborating or simply a question about anything on this site please don't hesitate
+                to get in touch!</p>
+            <a href="mailto: virtual.slide@gmail.com" class="git_button">Say Hi!</a>
+        </div>
+    </section>
+    <a class="arrow_container" href="#">
+        <div class="up_arrow"></div>
+    </a>
+    <div class="contact_container">
+        <a href="https://www.linkedin.com/in/harry-johnston-462322105" class="contact_button"><i
+                class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto: virtual.slide@gmail.com" class="contact_button"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Harry-Johnston" class="contact_button"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <footer>
+        <p class="footer">Designed and built by Harry Johnston </p>
+    </footer>
+</main>
 </body>
 </html>
