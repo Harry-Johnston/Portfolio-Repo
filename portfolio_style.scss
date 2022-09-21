@@ -79,12 +79,6 @@ h1 {
 	color: $impact-text-color;
 }
 
-.intro_subheading {
-	font-size: 5rem;
-	margin: 10px 0;
-	color: $impact-sub-text-color;
-}
-
 .intro_short {
 	font-size: 2rem;
 	color: #6e8585;
@@ -256,7 +250,7 @@ h1 {
 
 .project_container {
 	gap: 30px;
-	margin: 30px;
+	margin: 30px 0;
 	border-radius: 7px;
 	background-color: $component-overlay;
 }
@@ -329,7 +323,8 @@ h1 {
 
 .live:hover {
 	border: 1px solid $accent-color;
-	transition: border 0.5s;
+	color: $accent-color;
+	transition: border 0.5s, color 0.5s;
 }
 
 #git_container {

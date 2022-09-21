@@ -76,12 +76,6 @@ h1 {
   color: #b0cfcf;
 }
 
-.intro_subheading {
-  font-size: 5rem;
-  margin: 10px 0;
-  color: #87a1a1;
-}
-
 .intro_short {
   font-size: 2rem;
   color: #6e8585;
@@ -252,7 +246,7 @@ h1 {
 
 .project_container {
   gap: 30px;
-  margin: 30px;
+  margin: 30px 0;
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.0901960784);
 }
@@ -325,7 +319,8 @@ h1 {
 
 .live:hover {
   border: 1px solid #BB86FC;
-  transition: border 0.5s;
+  color: #BB86FC;
+  transition: border 0.5s, color 0.5s;
 }
 
 #git_container {
