@@ -95,6 +95,7 @@ h1 {
 	font-size: 2rem;
 	padding: 20px;
 	border-radius: 10px;
+	transition: background-color 0.4s, color 0.4s;
 }
 
 .intro_button:hover, .git_button:hover {
@@ -271,11 +272,12 @@ h1 {
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 20px;
+	padding-bottom: 20px;
 }
 
 .project_image {
 	border-radius: 5px;
-	width: 400px;
+	width: 500px;
 	object-fit: cover;
 }
 
@@ -535,6 +537,7 @@ footer {
 
 	.intro_container {
 		justify-content: unset;
+		margin-top: 75px;
 	}
 
 	#git_container {
